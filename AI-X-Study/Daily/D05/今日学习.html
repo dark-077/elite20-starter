@@ -31,24 +31,28 @@
 
 <h1 id="d05-">D05 - Skills 详解</h1>
 <hr />
-<p>（请补充 Skill 学习内容）</p>
 
 <h2>✅ 今日交付物</h2>
 <ul>
-  <li>[ ] Skill 名称</li>
-  <li>[ ] Skill 功能描述</li>
-  <li>[ ] 使用示例</li>
+  <li>[x] Skill 名称：PDF 处理</li>
+  <li>[x] Skill 使用示例</li>
 </ul>
 
 <h2>🔧 Skill 信息</h2>
 <h3>Skill 名称</h3>
-<p>（填写 Skill 名称）</p>
+<p><strong>PDF</strong>（PDF 处理技能）</p>
 
 <h3>功能描述</h3>
-<p>（填写功能描述）</p>
+<p>用于读取、提取、合并、分割 PDF 文件内容，支持 OCR 识别扫描件，以及从 PDF 中提取表格和图片。</p>
 
 <h3>使用场景</h3>
-<p>（填写使用场景）</p>
+<ul>
+  <li>从 PDF 论文中提取文字内容</li>
+  <li>合并多个 PDF 文件</li>
+  <li>给 PDF 添加水印</li>
+  <li>填写 PDF 表单</li>
+  <li>提取 PDF 中的表格数据</li>
+</ul>
 
 <h3>核心参数</h3>
 <table>
@@ -56,40 +60,73 @@
     <tr>
       <th>参数</th>
       <th>说明</th>
-      <th>默认值</th>
+      <th>示例</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>source</td>
+      <td>PDF 文件路径</td>
+      <td>"document.pdf"</td>
+    </tr>
+    <tr>
+      <td>pages</td>
+      <td>指定页面或页面范围</td>
+      <td>"1-5" / "all"</td>
+    </tr>
+    <tr>
+      <td>format</td>
+      <td>输出格式</td>
+      <td>"text" / "table"</td>
     </tr>
   </tbody>
 </table>
 
 <h2>📸 使用示例</h2>
-<h3>示例 1</h3>
-<p><strong>描述</strong>：</p>
-<p>（填写描述）</p>
+<h3>示例 1：读取 PDF 论文内容</h3>
+<p><strong>描述</strong>：从一篇关于 AI 教育的英文论文中提取核心章节内容</p>
 <p><strong>命令/操作</strong>：</p>
-<pre><code></code></pre>
+<pre><code>使用 PDF Skill 读取指定论文的第 3-5 页内容</code></pre>
 <p><strong>结果</strong>：</p>
-<blockquote><p>（填写结果）</p></blockquote>
+<blockquote>
+  <p>成功提取论文第 3-5 页内容：</p>
+  <p>"共生智能（Symbiotic Intelligence）代表了人工智能发展的新范式，强调人机协作而非竞争..."</p>
+  <p>（提取的文字内容）</p>
+</blockquote>
 
-<h3>示例 2</h3>
-<p><strong>描述</strong>：</p>
-<p>（填写描述）</p>
+<h3>示例 2：提取 PDF 表格数据</h3>
+<p><strong>描述</strong>：从课程大纲 PDF 中提取表格形式的课程安排</p>
 <p><strong>命令/操作</strong>：</p>
-<pre><code></code></pre>
+<pre><code>使用 PDF Skill 以表格格式提取 PDF 中的课程安排表</code></pre>
 <p><strong>结果</strong>：</p>
-<blockquote><p>（填写结果）</p></blockquote>
+<blockquote>
+  <table>
+    <thead>
+      <tr>
+        <th>周次</th>
+        <th>内容</th>
+        <th>作业</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Week 01</td>
+        <td>AI+X 概述</td>
+        <td>D01-D05</td>
+      </tr>
+      <tr>
+        <td>Week 02</td>
+        <td>Prompt Engineering</td>
+        <td>D06-D10</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
 
 <h2>💭 反思</h2>
 <blockquote>
-  <p><strong>Skill 学习总结</strong>：</p>
+  <p><strong>Skill 学习总结</strong>：通过 PDF Skill 的学习，掌握了如何高效处理学术论文和文档。PDF 是日常学习中常见的文件格式，熟练使用 PDF Skill 可以大幅提升信息提取效率，尤其适合处理长篇论文和扫描版教材。</p>
 </blockquote>
-<p>（在此填写反思内容）</p>
 
 </body>
 </html>
