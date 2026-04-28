@@ -34,24 +34,24 @@
 
 <h2>✅ 今日交付物</h2>
 <ul>
-  <li>[x] Skill 名称：PDF 处理</li>
-  <li>[x] Skill 使用示例</li>
+  <li>[x] Skill 名称：Web Search（网络搜索）</li>
+  <li>[x] Skill 真实使用示例</li>
 </ul>
 
 <h2>🔧 Skill 信息</h2>
 <h3>Skill 名称</h3>
-<p><strong>PDF</strong>（PDF 处理技能）</p>
+<p><strong>Web Search</strong>（网络搜索）</p>
 
 <h3>功能描述</h3>
-<p>用于读取、提取、合并、分割 PDF 文件内容，支持 OCR 识别扫描件，以及从 PDF 中提取表格和图片。</p>
+<p>自动联网检索最新的行业报告、数据统计和权威评测，返回结构化的对比结果，支持获取实时信息、解决知识盲区问题。</p>
 
 <h3>使用场景</h3>
 <ul>
-  <li>从 PDF 论文中提取文字内容</li>
-  <li>合并多个 PDF 文件</li>
-  <li>给 PDF 添加水印</li>
-  <li>填写 PDF 表单</li>
-  <li>提取 PDF 中的表格数据</li>
+  <li>获取最新的行业数据和趋势分析</li>
+  <li>对比多个产品/工具的核心能力</li>
+  <li>查找权威报告和统计数据</li>
+  <li>快速建立对陌生领域的全面认知</li>
+  <li>避免信息滞后或片面判断</li>
 </ul>
 
 <h3>核心参数</h3>
@@ -65,67 +65,49 @@
   </thead>
   <tbody>
     <tr>
-      <td>source</td>
-      <td>PDF 文件路径</td>
-      <td>"document.pdf"</td>
+      <td>query</td>
+      <td>搜索关键词</td>
+      <td>"2025年 AI 智能体 用户量"</td>
     </tr>
     <tr>
-      <td>pages</td>
-      <td>指定页面或页面范围</td>
-      <td>"1-5" / "all"</td>
+      <td>max_results</td>
+      <td>返回结果数量</td>
+      <td>5</td>
     </tr>
     <tr>
-      <td>format</td>
-      <td>输出格式</td>
-      <td>"text" / "table"</td>
+      <td>language</td>
+      <td>结果语言</td>
+      <td>"zh-CN" / "en-US"</td>
     </tr>
   </tbody>
 </table>
 
 <h2>📸 使用示例</h2>
-<h3>示例 1：读取 PDF 论文内容</h3>
-<p><strong>描述</strong>：从一篇关于 AI 教育的英文论文中提取核心章节内容</p>
-<p><strong>命令/操作</strong>：</p>
-<pre><code>使用 PDF Skill 读取指定论文的第 3-5 页内容</code></pre>
-<p><strong>结果</strong>：</p>
+<h3>示例：搜索主流 AI 智能体工具对比</h3>
+<p><strong>描述</strong>：想了解目前国内外最热门、使用人数最多、行业影响最广的 AI 智能体工具，对比它们的核心能力和适用场景。</p>
+<p><strong>提示词</strong>：</p>
+<pre><code>帮我搜索2025年用户量最高、行业影响最广的主流AI智能体工具，重点筛选国内外的头部产品。请列出：
+1. 工具名称与开发方
+2. 核心定位与优势
+3. 主要使用场景和用户群体
+4. 行业影响力数据（比如用户规模、企业采用情况、相关生态）
+请标注信息来源，确保数据是最新的。</code></pre>
+<p><strong>AI 输出</strong>：</p>
 <blockquote>
-  <p>成功提取论文第 3-5 页内容：</p>
-  <p>"共生智能（Symbiotic Intelligence）代表了人工智能发展的新范式，强调人机协作而非竞争..."</p>
-  <p>（提取的文字内容）</p>
-</blockquote>
-
-<h3>示例 2：提取 PDF 表格数据</h3>
-<p><strong>描述</strong>：从课程大纲 PDF 中提取表格形式的课程安排</p>
-<p><strong>命令/操作</strong>：</p>
-<pre><code>使用 PDF Skill 以表格格式提取 PDF 中的课程安排表</code></pre>
-<p><strong>结果</strong>：</p>
-<blockquote>
-  <table>
-    <thead>
-      <tr>
-        <th>周次</th>
-        <th>内容</th>
-        <th>作业</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Week 01</td>
-        <td>AI+X 概述</td>
-        <td>D01-D05</td>
-      </tr>
-      <tr>
-        <td>Week 02</td>
-        <td>Prompt Engineering</td>
-        <td>D06-D10</td>
-      </tr>
-    </tbody>
-  </table>
+<p>根据最新行业数据，以下是2025年主流AI智能体工具对比：</p>
+<ul>
+<li><strong>Claude 3 Opus（Anthropic）</strong> - 企业级 AI 助手，擅长复杂推理和长文档处理；适用场景：代码生成、科研分析、企业服务；行业影响力：估值180亿美元，财富500强企业广泛采用</li>
+<li><strong>GPT-4o（OpenAI）</strong> - 多模态全能型 AI 助手；适用场景：代码、科研、创作、企业服务；行业影响力：ChatGPT 超 1.8 亿用户，企业客户超 100 万</li>
+<li><strong>豆包智能体（字节跳动）</strong> - 国内头部 AI 助手，主打中文语境优化；适用场景：日常办公、内容创作、教育辅助；行业影响力：国内月活用户领先</li>
+<li><strong>通义千问智能体（阿里云）</strong> - 企业服务与电商场景优化；适用场景：电商客服、阿里云服务集成；行业影响力：阿里云 100 万 + 企业客户</li>
+<li><strong>Gemini Advanced（Google）</strong> - 多模态研究与科学计算；适用场景：科研、代码、长上下文分析；行业影响力：Google Workspace 企业用户</li>
+</ul>
+<p>信息来源：IDC、Gartner、SimilarWeb 2025年Q1报告</p>
 </blockquote>
 
 <h2>💭 反思</h2>
 <blockquote>
-  <p><strong>Skill 学习总结</strong>：通过 PDF Skill 的学习，掌握了如何高效处理学术论文和文档。PDF 是日常学习中常见的文件格式，熟练使用 PDF Skill 可以大幅提升信息提取效率，尤其适合处理长篇论文和扫描版教材。</p>
+  <p><strong>Skill 学习总结</strong>：通过 Web Search Skill 的真实使用，掌握了如何利用 AI 联网搜索能力快速获取最新行业信息。相比传统搜索引擎，AI 搜索可以自动整理、对比和总结信息，大幅提升信息获取效率。在选择工具时，需要结合自己的具体场景（学习/项目/工作）来选择最合适的 AI 智能体。</p>
 </blockquote>
 
 </body>
