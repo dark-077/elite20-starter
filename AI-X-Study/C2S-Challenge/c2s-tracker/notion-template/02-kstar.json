@@ -1,0 +1,53 @@
+{
+  "name": "KSTAR 行动方案追踪",
+  "description": "追踪 C2S 产物②：KSTAR 行动方案",
+  "properties": {
+    "方案名称": {
+      "type": "title",
+      "description": "KSTAR 方案主题"
+    },
+    "K-知识": {
+      "type": "text",
+      "description": "需要什么信息？"
+    },
+    "S-情境": {
+      "type": "text",
+      "description": "具体情况/约束是什么？"
+    },
+    "T-任务": {
+      "type": "text",
+      "description": "真正要完成的是什么？"
+    },
+    "A-行动": {
+      "type": "text",
+      "description": "做了什么（包括提示词）？"
+    },
+    "R-结果": {
+      "type": "text",
+      "description": "发生了什么？是否符合预期？"
+    },
+    "状态": {
+      "type": "select",
+      "options": ["未开始", "K阶段", "S阶段", "T阶段", "A阶段", "R阶段", "已完成"]
+    },
+    "完成度": {
+      "type": "number",
+      "format": "percent"
+    },
+    "可执行性": {
+      "type": "select",
+      "options": ["待改进", "基本可行", "良好", "优秀"]
+    },
+    "最后修改": {
+      "type": "date"
+    }
+  },
+  "检查清单": [
+    "K - 是否明确了需要的具体信息？",
+    "S - 是否有具体的时间/资源约束？",
+    "T - 任务是否具体可衡量？",
+    "A - 是否有具体的行动步骤？",
+    "R - 结果是否有可衡量的指标？",
+    "整体 - 读完后能否'下学期可以试着跑一下'？"
+  ]
+}
